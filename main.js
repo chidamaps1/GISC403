@@ -16,7 +16,6 @@ const tiles = L.tileLayer('https://api.mapbox.com/styles/v1/gdmckenzie/clu1okfsi
 
 / There are four markers below.  Each has a latitude and longitude.  Edit these to be your unique places of interest.
 // Also note that each has its own 'pop-up.'  Edit the text in each of these to say why each location is important to you.
-
 const marker1 = L.marker([-40.335061228045625, 175.6276445697483]).addTo(map)
 	.bindPopup('We, Team Lhotshampa, participate in the annual inter-Nepalese football tournament hosted at Skoglund Park. We \ currently hold the title of five-times champions.'');
 
@@ -28,9 +27,6 @@ const marker3 = L.marker([-45.86816153383429, 170.506589880616]).addTo(map)
 
 const marker4 = L.marker([-42.49051468800719, 173.16253358475484]).addTo(map)
 	.bindPopup('I have spend many weekends at this cabin in Mt Lyford. It\'s a great place to escape with loved ones, offering nearby hiking trails and lakes for exploration.').openPopup();
-
-
-
 
 // These are the Territorial Authority Polygons that are being accessed from a 3rd party server.
 // Edit the style of these polygons (see: https://leafletjs.com/reference.html#path)
