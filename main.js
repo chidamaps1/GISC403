@@ -40,7 +40,7 @@ var resturantIcon = L.icon({
 });
 
 var cabinIcon = L.icon({
-    iconUrl: '//file/Usersc$/cch193/Home/Desktop/GIS403 LABS/Symbols/cabinpin.png',
+    iconUrl: 'https://imgbox.com/UgL6UuUr',
     iconSize: [30,30],
     iconAnchor: [20,40],
     popupAnchor: [0, -40]  
