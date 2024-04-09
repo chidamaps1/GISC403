@@ -25,7 +25,7 @@ var footballIcon = L.icon({
 });
 
 var cafeIcon = L.icon({
-    iconUrl: '//file/Usersc$/cch193/Home/Desktop/GIS403 LABS/Symbols/cafepin.png',
+    iconUrl: 'https://www.freepik.com/icon/coffee-shop-pin_8106',
     iconSize: [30,30],
     iconAnchor: [20,40],
     popupAnchor: [0, -40]  
