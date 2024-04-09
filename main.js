@@ -16,34 +16,11 @@ const tiles = L.tileLayer('https://api.mapbox.com/styles/v1/gdmckenzie/clu1okfsi
 
 // Custom marker icons
 
-var footballIcon = L.icon({
-    iconUrl: '//file/Usersc$/cch193/Home/Desktop/GIS403 LABS/Symbols/footballpin.png',
-    iconSize: [30,30],
-    iconAnchor: [20,40],
-    popupAnchor: [0, -40]   
-   
-});
-
-var cafeIcon = L.icon({
-    iconUrl: 'https://www.freepik.com/icon/coffee-shop-pin_8106',
-    iconSize: [30,30],
-    iconAnchor: [20,40],
-    popupAnchor: [0, -40]  
-
-});
-
-var resturantIcon = L.icon({
-    iconUrl: '//file/Usersc$/cch193/Home/Desktop/GIS403 LABS/Symbols/restaurant.png',
-    iconSize: [30,30],
-    iconAnchor: [20,40],
-    popupAnchor: [0, -40]  
-});
-
-var cabinIcon = L.icon({
-    iconUrl: 'https://imgbox.com/UgL6UuUr',
-    iconSize: [30,30],
-    iconAnchor: [20,40],
-    popupAnchor: [0, -40]  
+const footballIconUrl = 'URL_TO_FOOTBALL_ICON_IMAGE';
+const cafeIconUrl = 'URL_TO_CAFE_ICON_IMAGE';
+const restaurantIconUrl = 'URL_TO_RESTAURANT_ICON_IMAGE';
+const cabinIconUrl = 'https://imgbox.com/UgL6UuUr'
+    
 });
 
 //
@@ -59,8 +36,14 @@ const marker2 = L.marker([-43.57817117924751, 172.54656944752773], { icon: cafeI
 const marker3 = L.marker([-45.86816153383429, 170.506589880616], { icon: resturantIcon }).addTo(map)
 	.bindPopup("Mela Eatery is one of the best Nepalese resturants in New Zealand. It\'s where I love to go, espically when I'm missing my moms cooking.");
 
-const marker4 = L.marker([-42.49051468800719, 173.16253358475484],{ icon: cabinIcon }).addTo(map)
-	.bindPopup('I have spend many weekends at this cabin in Mt Lyford. It\'s a great place to escape with loved ones, offering nearby hiking trails and lakes for exploration.').openPopup();
+const marker4 = new mapboxgl.Marker({ 
+    color: 'blue',
+    imageUrl: cabinIconUrl, // https://imgbox.com/UgL6UuUr
+})
+.setLngLat([-42.49051468800719, 173.16253358475484])
+.setPopup(new mapboxgl.Popup().setHTML('I have spend many weekends at this cabin in Mt Lyford. It\'s a great place to escape with loved ones, offering nearby hiking trails and lakes for exploration.'))
+.addTo(map);
+
 
 
 
